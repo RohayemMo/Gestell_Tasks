@@ -18,4 +18,8 @@
 #define Problem_14  14
 #define Problem_15  15
 
+
+#define Right_Shift 0
+#define Left_Shift 1
+
 #endif 

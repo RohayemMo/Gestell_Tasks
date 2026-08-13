@@ -11,21 +11,21 @@ int main()
 
     switch(choose)
     { 
-        case  1: Problem_1();  break;
-        case  2: Problem_2();  break;
-        case  3: Problem_3();  break;
-        case  4: Problem_4();  break;
-        case  5: Problem_5();  break;
-        case  6: Problem_6();  break;
-        case  7: Problem_7();  break;
-        case  8: Problem_8();  break;
-        case  9: Problem_9();  break;
-        case 10: Problem_10(); break;
-        case 11: Problem_11(); break;
-        case 12: Problem_12(); break;
-        case 13: Problem_13(); break;
-        case 14: Problem_14(); break;
-        case 15: Problem_15(); break;
+        case  1: Problem__1();  break;
+        case  2: Problem__2();  break;
+        case  3: Problem__3();  break;
+        case  4: Problem__4();  break;
+        case  5: Problem__5();  break;
+        case  6: Problem__6();  break;
+        case  7: Problem__7();  break;
+        case  8: Problem__8();  break;
+        case  9: Problem__9();  break;
+        case 10: Problem__10(); break;
+        case 11: Problem__11(); break;
+        case 12: Problem__12(); break;
+        case 13: Problem__13(); break;
+        case 14: Problem__14(); break;
+        case 15: Problem__15(); break;
         default: printf("invaild");
     }
     return 0;  

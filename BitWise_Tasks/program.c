@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 #include "interface.h"
+#include "private.h"
 
 /*===============================================================================================*/
-void Problem_1()
+void Problem__1()
 {
     int8_t number;
     printf("please enter number= ");
@@ -19,7 +20,7 @@ void Problem_1()
     }
 }
 /*===============================================================================================*/
-void Problem_2()
+void Problem__2()
 {
     int8_t number;
     printf("please enter number= ");
@@ -36,7 +37,7 @@ void Problem_2()
     }
 }
 /*===============================================================================================*/
-void Problem_3()
+void Problem__3()
 {
     int8_t number;
     int8_t BIT;
@@ -55,7 +56,7 @@ void Problem_3()
     }
 }
 /*===============================================================================================*/
-void Problem_4()
+void Problem__4()
 {
     int8_t number;
     int8_t BIT;
@@ -71,7 +72,7 @@ void Problem_4()
     printf("Number after setting %hhd bit= %hhd\n", BIT , number_after);
 }
 /*===============================================================================================*/
-void Problem_5()
+void Problem__5()
 {
     int8_t number;
     int8_t BIT;
@@ -87,7 +88,7 @@ void Problem_5()
     printf("Number after setting %hhd bit- %hhd\n", BIT , number_after);
 }
 /*===============================================================================================*/
-void Problem_6()
+void Problem__6()
 {
     int8_t number;
     int8_t highest_Bit=0;
@@ -103,7 +104,7 @@ void Problem_6()
     printf("Highest order set bit in %hhd is %hhd\n",number,highest_Bit);
 }
 /*===============================================================================================*/
-void Problem_7()
+void Problem__7()
 {
     int8_t number;
     int8_t Lowest_Bit=0;
@@ -120,7 +121,7 @@ void Problem_7()
     printf("Lowest order set bit in %hhd is %hhd\n",number,Lowest_Bit);
 }
 /*===============================================================================================*/
-void Problem_8()
+void Problem__8()
 {
     int8_t number;
     int8_t Count_Zero=0;
@@ -140,7 +141,7 @@ void Problem_8()
     printf("The number of trilling zero in %hhd is %hhd\n",number,Count_Zero);
 }
 /*===============================================================================================*/
-void Problem_9()
+void Problem__9()
 {
     int8_t number;
     int8_t Count_LeadingOf_Zeros=0;
@@ -160,7 +161,7 @@ void Problem_9()
     printf("number of leadind zeros in %hhd is %hhd\n",number,Count_LeadingOf_Zeros);
 }
 /*===============================================================================================*/
-void Problem_10()
+void Problem__10()
 {
     int8_t number;
     int8_t result=0;
@@ -184,7 +185,7 @@ void Problem_10()
 
 }
 /*===============================================================================================*/
-void Problem_11()
+void Problem__11()
 {
     int8_t number;
     int8_t Count_Zeros=0;
@@ -206,12 +207,59 @@ void Problem_11()
     printf("Total ones = %hhd\n",Count_Ones);
 }
 /*===============================================================================================*/
-void Problem_12()
+void Problem__12()
 {
+    int8_t number;
+    int8_t choose;
+    int8_t times;
+    printf("please enter number= ");
+    scanf(" %hhd",&number);
+    int8_t roated_number= number;
 
+    printf("%hhd for Right Shift\n", Right_Shift);
+    printf("%hhd for Left Shift\n", Left_Shift);
+    printf("Your choice: ");
+    scanf("%hhd", &choose);
+    printf("enter how many times do you want to rotate: ");
+    scanf("%hhd", &times);
+    
+    if(choose==Right_Shift)
+    {
+        for(int8_t counter=0 ; counter<times ; counter++)
+        {
+            if((roated_number&1)==1)
+            {
+            roated_number= roated_number>>1;
+            roated_number= roated_number |  (1 << (7));
+            }
+            else if((roated_number&1)==0)
+            {
+            roated_number= roated_number>>1;
+            roated_number= roated_number & ~(1 << (7));
+            }
+
+        }
+        printf("Rotated number = %hhd\n", roated_number);
+    }
+    else if(choose==Left_Shift)
+    {
+        for(int8_t counter=0 ; counter<times ; counter++)
+        {
+            if((roated_number&(1<<7))!=0)
+            {
+            roated_number= roated_number<<1;
+            roated_number= roated_number | 1;
+            }
+            else if((roated_number&(1<<7))==0)
+            {
+            roated_number= roated_number<<1;
+            }
+        }
+        printf("Rotated number = %hhd\n", roated_number);
+    }
 }
 /*===============================================================================================*/
-void Problem_13()
+void Problem__13()
 {
     int8_t number;
     int8_t num_1;
@@ -231,12 +279,12 @@ void Problem_13()
     printf("number2 after swap= %hhd\n",num_2);
 }
 /*===============================================================================================*/
-void Problem_14()
+void Problem__14()
 {
     int8_t number;
     printf("please enter number= ");
     scanf(" %hhd",&number);
-    if (((number >> 7) & 1) == 1)
+    if (((number >> 1) & 1) == 1)
     {
     printf("Number %hhd is odd",number);
     }
@@ -246,7 +294,7 @@ void Problem_14()
     }
 }
 /*===============================================================================================*/
-void Problem_15()
+void Problem__15()
 {
     int8_t number;
     printf("please enter number= ");

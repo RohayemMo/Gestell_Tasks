@@ -2,20 +2,20 @@
 #ifndef INTERFACE_H
 #define INTERFACE_H
 
-void Problem_1();
-void Problem_2();
-void Problem_3();
-void Problem_4();
-void Problem_5();
-void Problem_6();
-void Problem_7();
-void Problem_8();
-void Problem_9();
-void Problem_10();
-void Problem_11();
-void Problem_12();
-void Problem_13();
-void Problem_14();
-void Problem_15();
+void Problem__1();
+void Problem__2();
+void Problem__3();
+void Problem__4();
+void Problem__5();
+void Problem__6();
+void Problem__7();
+void Problem__8();
+void Problem__9();
+void Problem__10();
+void Problem__11();
+void Problem__12();
+void Problem__13();
+void Problem__14();
+void Problem__15();
 
 #endif
