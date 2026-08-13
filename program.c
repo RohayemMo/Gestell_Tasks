@@ -248,32 +248,21 @@ void Problem_14()
 /*===============================================================================================*/
 void Problem_15()
 {
-    // int8_t number;
-    // int8_t result=0X00;
-    // printf("please enter number= ");
-    // scanf(" %hhd",&number);
-    
-    // for(int8_t counter=7;counter>=0;counter--)
-    // {
-    //     if(((number>>counter)&1)==1)
-    //     {
-    //     result = result |  (1 << (counter));
-    //     }
-    //     else
-    //     {
-    //     result = result &~(1<<(counter));
-    //     }
-    // }
-    // printf("Number %hhd in binary= %hhd",number,result);
-
     int8_t number;
     printf("please enter number= ");
     scanf(" %hhd",&number);
-    printf("Number in binary= ");
+    
+    printf("Number %hhd in binary",number);
     for(int8_t counter=7;counter>=0;counter--)
     {
-        printf("%hhd",((number>>counter)&1));
+        if(((number>>counter)&1)==1)
+        {
+         printf("1");
+        }
+        else
+        {
+         printf("0");
+        }
     }
-    // printf("Number %hhd in binary= %hhd",number,result);
 }
 /*===============================================================================================*/
