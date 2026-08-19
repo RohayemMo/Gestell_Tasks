@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+    650	      0	      0	    650	    28a	D:\learning_MyData\codes\NewTasks\Task1\release\firmware.elf
