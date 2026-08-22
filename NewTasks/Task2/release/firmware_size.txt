@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+   1114	      0	      4	   1118	    45e	D:\Task2\release\firmware.elf
